@@ -3,8 +3,6 @@ public class ActaElectoral {
 
     protected String titulo;
     protected int numeroActa;
-    protected String fecha;
-    protected String hora;
     protected int nroVotantes;
     protected int nroVotosValidos;
     protected int nroVotosNulos;
@@ -16,8 +14,6 @@ public class ActaElectoral {
     public ActaElectoral() {
         titulo = "";
         numeroActa = 0;
-        fecha = "";
-        hora = "";
         nroVotantes = 0;
         nroVotosValidos = 0;
         nroVotosNulos = 0;
@@ -30,8 +26,6 @@ public class ActaElectoral {
     public ActaElectoral(String titulo, int numeroActa, String fecha, String hora, int nroVotantes, int nroVotosValidos, int nroVotosNulos, int nroVotosBlanco, int[] nroVotoPorCandidato, String observacion, MiembroDeMesa[] miembros) {
         this.titulo = titulo;
         this.numeroActa = numeroActa;
-        this.fecha = fecha;
-        this.hora = hora;
         this.nroVotantes = nroVotantes;
         this.nroVotosValidos = nroVotosValidos;
         this.nroVotosNulos = nroVotosNulos;
@@ -55,22 +49,6 @@ public class ActaElectoral {
 
     public void setNumeroActa(int numeroActa) {
         this.numeroActa = numeroActa;
-    }
-
-    public String getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
-    }
-
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
-        this.hora = hora;
     }
 
     public int getNroVotantes() {

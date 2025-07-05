@@ -2,14 +2,12 @@ package Clases;
 public class Eleccion {
     
     protected String tipoEleccion;
-    protected String fecha;
     protected Candidato[] candidatos;
     protected PartidoPolitico[] partidos;
     protected MesaElectoral[] mesas;
 
     public Eleccion() {
         tipoEleccion = "";
-        fecha = "";
         candidatos = new Candidato[0];
         partidos = new PartidoPolitico[0];
         mesas = new MesaElectoral[0];
@@ -17,7 +15,6 @@ public class Eleccion {
 
     public Eleccion(String tipoEleccion, String fecha, Candidato[] candidatos, PartidoPolitico[] partidos, MesaElectoral[] mesas) {
         this.tipoEleccion = tipoEleccion;
-        this.fecha = fecha;
         this.candidatos = candidatos;
         this.partidos = partidos;
         this.mesas = mesas;
@@ -29,14 +26,6 @@ public class Eleccion {
 
     public void setTipoEleccion(String tipoEleccion) {
         this.tipoEleccion = tipoEleccion;
-    }
-
-    public String getFecha() {
-        return fecha;
-    }
-
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
     }
 
     public Candidato[] getCandidatos() {

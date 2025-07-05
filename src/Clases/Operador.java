@@ -65,7 +65,19 @@ public class Operador {
         this.password = password;
     }
     
-    
+    public Candidato[] agregarCandidato(Eleccion elec, Candidato cand){
+        Candidato[] candidatos = elec.getCandidatos();
+        Candidato[] aux = new Candidato[candidatos.length + 1];
+        
+        for (int i = 0; i < candidatos.length; i++) {
+            aux[i] = candidatos[i];
+        }
+        
+        aux[candidatos.length+1] = cand;
+        
+        return aux;
+        
+    }
     
     
 }
