@@ -3,17 +3,17 @@ public class Candidato {
     
     protected String nombres;
     protected String apellidos;
-    protected PartidoPolitico partido;
+    protected String partido;
     protected int DNI;
     
     public Candidato(){
         nombres = "";
         apellidos = "";
-        partido = new PartidoPolitico();
+        partido = "";
         DNI = 0;
     }
 
-    public Candidato(String nombres, String apellidos, PartidoPolitico partido, int DNI) {
+    public Candidato(String nombres, String apellidos, String partido, int DNI) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.partido = partido;
@@ -36,13 +36,15 @@ public class Candidato {
         this.apellidos = apellidos;
     }
 
-    public PartidoPolitico getPartido() {
+    public String getPartido() {
         return partido;
     }
 
-    public void setPartido(PartidoPolitico partido) {
+    public void setPartido(String partido) {
         this.partido = partido;
     }
+
+    
 
     public int getDNI() {
         return DNI;
